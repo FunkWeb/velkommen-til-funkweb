@@ -68,7 +68,7 @@ label kantine:
         
     scene kantine
 
-    "Kantina ser ut som en kanskje vanlig kontor kantine ved første blikk egentlig."
+    "Kantina ser ut som en ganske vanlig kontor kantine ved første blikk."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
     show anders at left
     a "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
