@@ -1,21 +1,23 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿image inngang = im.Scale("bg inngang.jpg", 1920,1080)
+image kantine = im.Scale("bg kantine.jpg", 1920,1080)
+image klasserom = im.Scale("bg klasserom.jpg", 1920,1080)
+image lobby = im.Scale("bg lobby.jpg", 1920,1080)
+image datarom = im.Scale("bg datarom.jpg", 1920,1080)
+image johnny = im.Scale("johnny.png",480,900)
+image anders = im.Scale("anders.png",480,900)
+image ingeborg = im.Scale("ingeborg.png",480,900)
+image reidar = im.Scale("reidar.png",480,900)
 
 define j = Character("Johnny")
+define a = Character("Anders")
+define i = Character("Ingeborg")
+define r = Character("Reidar")
 
-bool lobby
-
-# The game starts here.
+default lobbyBesokt = False
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg inngang    
+    scene inngang    
 
     "Du har endelig kommet deg opp til femte etasje."
 
@@ -26,20 +28,19 @@ label start:
     "På venstre siden av døren finner du en ringeklokke. Du trykker på den."
 
     "Her kommer Johnny inn og sier noe som Johnny ville si."
-    show Johnny
+    show johnny at left
     j "Heisan! Alltid hyggelig å få nye folk inn i AFT!"
     j "La meg vise deg rundt kjapt."
 
-    jump lobbyBesøkt
-
-    return
+    jump lobby
 
 label lobby:
 
-    scene bg lobby
+    scene lobby
 
-    if !lobbyBesøkt:
-            "Du går inn døren til et rom med sofaer og mange dører."
+    if not lobbyBesokt:
+        "Du går inn døren til et rom med sofaer og mange dører."
+        show johnny at left
         j "Ta å desinfiser hendene dine før vi går videre."
         "Du tar tiden til å desinfiserre deg. Best å være sikker."
 
@@ -47,28 +48,58 @@ label lobby:
         j "Her finner du møterom (møterom navn her) og toaletter"
         "Alltid godt å vite hvor toalettene er"
     
-    if lobbyBesøkt:
+    else:
+        show johnny at left
         "Tilbake til lobbyen, hvor vil du besøke neste?"
+    
+    $ lobbyBesokt = True
 
-
+    menu:
+        "Gå til kantinen":
+            jump kantine
+        "Gå til labben":
+            jump klasserom
+        "Gå til datarom":
+            jump datarom
+        "Ferdig for dagen":
+            return
 
 label kantine:
         
-    scene bg kantine
+    scene kantine
 
     "Kantina ser ut som en kanskje vanlig kontor kantine ved første blikk egentlig."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
-    j "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
-    j "Vanlig lunsj tid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
+    show anders at left
+    a "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
+    a "Vanlig lunsj tid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
+
+    menu:
+        "Gå tilbake til lobby":
+            jump lobby 
 
 label klasserom:
 
+    scene klasserom
+    show ingeborg at right 
+
     "Forran deg er et stort rom med datamaskiner på rekke og rad"
-    j "Dette rommet har veldig enkle chromebooks."
-    j "Hvis du skal hovedsakelig skrive CV, søknader og kanskje ta noen online kurs kommer du til å sitte her."
-    ""
+    i "Dette rommet har veldig enkle chromebooks."
+    i "Hvis du skal hovedsakelig skrive CV, søknader og kanskje ta noen online kurs kommer du til å sitte her."
+
+    menu:
+        "Gå tilbake til lobby":
+            jump lobby
 
 label datarom:
+    scene datarom
+    show reidar at left
+
+    r "Her har du datarommet"
+    r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter"
+    menu:
+        "Gå tilbake til lobby":
+            jump lobby
 
     
     

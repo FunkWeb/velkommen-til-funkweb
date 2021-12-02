@@ -1,2 +1,7 @@
 .vscode
 log.txt
+errors.txt
+traceback.txt
+saves/
+cache/
+game/script.rpyc
