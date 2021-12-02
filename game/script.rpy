@@ -28,7 +28,7 @@ label start:
     "På venstre siden av døren finner du en ringeklokke. Du trykker på den."
 
     "Her kommer Johnny inn og sier noe som Johnny ville si."
-    show johnny at left
+    show johnny at left with fade
     j "Heisan! Alltid hyggelig å få nye folk inn i AFT!"
     j "La meg vise deg rundt kjapt."
 
@@ -57,7 +57,7 @@ label lobby:
     menu:
         "Gå til kantinen":
             jump kantine
-        "Gå til labben":
+        "Gå til klasserommet":
             jump klasserom
         "Gå til datarom":
             jump datarom
