@@ -1,12 +1,13 @@
-﻿image johnny = im.Scale("johnny.png",480,900)
-image anders = im.Scale("anders.png",480,900)
-image ingeborg = im.Scale("ingeborg.png",480,900)
-image reidar = im.Scale("reidar.png",480,900)
+﻿#image johnny = im.Scale("johnny.png",480,900)
+#image anders = im.Scale("anders.png",480,900)
+#image ingeborg = im.Scale("ingeborg.png",480,900)
+#image reidar = im.Scale("reidar.png",480,900)
 
 define j = Character("Johnny")
 define a = Character("Anders")
 define i = Character("Ingeborg")
 define r = Character("Reidar")
+define q = Character("???")
 
 default lobbyBesokt = False
 
@@ -22,9 +23,9 @@ label start:
 
     "På venstre siden av døren finner du en ringeklokke. Du trykker på den."
 
-    "Her kommer Johnny inn og sier noe som Johnny ville si."
-    show johnny at left with fade
-    j "Heisan! Alltid hyggelig å få nye folk inn i AFT!"
+    show johnny at right with fade
+    q "Heisan! Alltid fint å få nye folk inn i AFT!"
+    j "Mitt navn er Johnny, hyggelig å møte deg."
     j "La meg vise deg rundt kjapt."
 
     jump lobby
@@ -35,7 +36,7 @@ label lobby:
 
     if not lobbyBesokt:
         "Du går inn døren til et rom med sofaer og mange dører."
-        show johnny at left
+        show johnny at right
         j "Ta å desinfiser hendene dine før vi går videre."
         "Du tar tiden til å desinfiserre deg. Best å være sikker."
 
@@ -45,7 +46,7 @@ label lobby:
     
     else:
         show johnny at left
-        "Tilbake til lobbyen, hvor vil du besøke neste?"
+        "Da er vi tilbake til lobbyen, hvor vil du besøke neste?"
     
     $ lobbyBesokt = True
 
