@@ -1,9 +1,4 @@
-﻿image inngang = im.Scale("bg inngang.jpg", 1920,1080)
-image kantine = im.Scale("bg kantine.jpg", 1920,1080)
-image klasserom = im.Scale("bg klasserom.jpg", 1920,1080)
-image lobby = im.Scale("bg lobby.jpg", 1920,1080)
-image datarom = im.Scale("bg datarom.jpg", 1920,1080)
-image johnny = im.Scale("johnny.png",480,900)
+﻿image johnny = im.Scale("johnny.png",480,900)
 image anders = im.Scale("anders.png",480,900)
 image ingeborg = im.Scale("ingeborg.png",480,900)
 image reidar = im.Scale("reidar.png",480,900)
@@ -17,7 +12,7 @@ default lobbyBesokt = False
 
 label start:
 
-    scene inngang    
+    scene bg inngang    
 
     "Du har endelig kommet deg opp til femte etasje."
 
@@ -36,7 +31,7 @@ label start:
 
 label lobby:
 
-    scene lobby
+    scene bg lobby
 
     if not lobbyBesokt:
         "Du går inn døren til et rom med sofaer og mange dører."
@@ -66,7 +61,7 @@ label lobby:
 
 label kantine:
         
-    scene kantine
+    scene bg kantine
 
     "Kantina ser ut som en ganske vanlig kontor kantine ved første blikk."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
@@ -80,7 +75,7 @@ label kantine:
 
 label klasserom:
 
-    scene klasserom
+    scene bg klasserom
     show ingeborg at right 
 
     "Forran deg er et stort rom med datamaskiner på rekke og rad"
@@ -92,7 +87,7 @@ label klasserom:
             jump lobby
 
 label datarom:
-    scene datarom
+    scene bg datarom
     show reidar at left
 
     r "Her har du datarommet"
