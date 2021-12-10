@@ -17,14 +17,14 @@ label start:
 
     "Du har endelig kommet deg opp til femte etasje."
 
-    "På døren ser du Funkweb logoen"
+    "På døren ser du Funkweb-logoen"
 
     "Det er første dagen din på arbeidsforberedene trening, eller AFT for kort."
 
     "På venstre siden av døren finner du en ringeklokke. Du trykker på den."
 
     show johnny at right with fade
-    q "Heisan! Alltid fint å få nye folk inn i AFT!"
+    q "Heisann! Alltid fint å få nye folk inn i AFT!"
     j "Mitt navn er Johnny, hyggelig å møte deg."
     j "La meg vise deg rundt kjapt."
 
@@ -35,18 +35,18 @@ label lobby:
     scene bg lobby with ease
 
     if not lobbyBesokt:
-        "Du går inn døren til et rom med sofaer og mange dører."
+        "Du går inn døren til et område med sofaer og flere  dører."
         show johnny at right
 
         j "Ta å desinfiser hendene dine før vi går videre."
         scene bg antibac
-        "Til venstre for døren ser du midler for å desinfisere hender og mundbind hvis du trenger det. Du kan også henge fra deg jakker her."
+        "Til venstre for døren ser du midler for å desinfisere hender og munnbind hvis du trenger det. Du kan også henge fra deg jakker her."
         scene bg lobby
 
         show johnny at right
-        j "Dette er lobbyen"
-        j "Her finner du møterom (møterom navn her) og toaletter"
-        "Alltid godt å vite hvor toalettene er"
+        j "Dette er lobbyen."
+        j "Her finner du møterom (møterom navn her) og toaletter."
+        "Alltid godt å vite hvor toalettene er."
     
     else:
         show johnny at left
@@ -61,7 +61,7 @@ label lobby:
             scene bg gang thailand with fade
             "Her finner du møterom Thailand og (møterom navn her)."
             jump kantine
-        "Gå til datarom og klasseromm":
+        "Gå til datarom og klasserom":
             scene bg gang tilaft with fade
             pause 3.0
             scene bg gang tildatarom with fade
@@ -76,11 +76,11 @@ label kantine:
         
     scene bg kantine with fade
 
-    "Kantina ser ut som en ganske vanlig kontor kantine ved første blikk."
+    "Kantina ser ut som en ganske vanlig kontorkantine ved første blikk."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
     show anders at left
     a "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
-    a "Vanlig lunsj tid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
+    a "Vanlig lunsjtid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
 
     menu:
         "Gå rundt å se litt":
@@ -98,9 +98,9 @@ label velgDatarom:
 
     menu :
         "Hva vil du se først?"
-        "datarom":
+        "Datarom":
             jump datarom
-        "klasserom":
+        "Klasserom":
             jump klasserom
         
 
@@ -108,8 +108,8 @@ label datarom:
     scene bg datarom with fade
     show reidar at left
 
-    r "Her har du datarommet"
-    r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter"
+    r "Her har du datarommet."
+    r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter."
     menu:
         "Gå tilbake til lobby":
             jump lobby
@@ -121,9 +121,9 @@ label klasserom:
     scene bg klasserom
     show ingeborg at right 
 
-    "Forran deg er et stort rom med datamaskiner på rekke og rad"
-    i "Dette rommet har veldig enkle chromebooks."
-    i "Hvis du skal hovedsakelig skrive CV, søknader og kanskje ta noen online kurs kommer du til å sitte her."
+    "Foran deg er et stort rom med datamaskiner på rekke og rad."
+    i "Dette rommet er utstyrt med enkle Chromebooks."
+    i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kommer du til å sitte her."
 
     menu:
         "Gå tilbake til lobby":
@@ -138,7 +138,7 @@ label toalettene:
 
     menu :
         
-        "Hva er inn gangen til høyre for toalettene?":
+        "Hva er inngangen til høyre for toalettene?":
             jump gangVedToaletter
         "Tilbake til lobby":
             jump lobby
