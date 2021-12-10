@@ -32,7 +32,7 @@ label start:
 
 label lobby:
 
-    scene bg lobby
+    scene bg lobby with ease
 
     if not lobbyBesokt:
         "Du går inn døren til et rom med sofaer og mange dører."
@@ -59,12 +59,14 @@ label lobby:
             scene bg gang tildatarom with fade
             pause 3.0
             jump velgDatarom
+        "Hvor er toalettene?":
+            jump toalettene
         "Ferdig for dagen":
             return
 
 label kantine:
         
-    scene bg kantine
+    scene bg kantine with fade
 
     "Kantina ser ut som en ganske vanlig kontor kantine ved første blikk."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
@@ -78,7 +80,7 @@ label kantine:
 
 
 label velgDatarom:
-    scene gb gang dataromdør with fade
+    scene bg gang dataromdør with fade
 
     menu :
         "Hva vil du se først?"
@@ -97,6 +99,8 @@ label datarom:
     menu:
         "Gå tilbake til lobby":
             jump lobby
+        "Eller se klasserommet":
+            jump klasserom
 
 label klasserom:
 
@@ -110,8 +114,28 @@ label klasserom:
     menu:
         "Gå tilbake til lobby":
             jump lobby
-        "Eller se datarommet"
+        "Eller se datarommet":
             jump datarom
-    
-    
 
+label toalettene:
+    scene bg toaletter with ease
+
+    "Godt å vite hvor toalettene er."
+
+    menu :
+        
+        "Hva er inn gangen til høyre for toalettene?":
+            jump gangVedToaletter
+        "Tilbake til lobby":
+            jump lobby
+
+label gangVedToaletter:
+
+    scene bg gang spania with fade
+
+    "Her finner du grupperom Spania og (Blank)"
+
+    menu :
+        "Tilbake til lobby":
+            jump lobby
+        
