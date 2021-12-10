@@ -37,9 +37,13 @@ label lobby:
     if not lobbyBesokt:
         "Du går inn døren til et rom med sofaer og mange dører."
         show johnny at right
-        j "Ta å desinfiser hendene dine før vi går videre."
-        "Du tar tiden til å desinfiserre deg. Best å være sikker."
 
+        j "Ta å desinfiser hendene dine før vi går videre."
+        scene bg antibac
+        "Til venstre for døren ser du midler for å desinfisere hender og mundbind hvis du trenger det. Du kan også henge fra deg jakker her."
+        scene bg lobby
+
+        show johnny at right
         j "Dette er lobbyen"
         j "Her finner du møterom (møterom navn her) og toaletter"
         "Alltid godt å vite hvor toalettene er"
@@ -52,6 +56,10 @@ label lobby:
 
     menu:
         "Gå til kantinen":
+            scene bg lobby kantine with fade
+            pause 3.0
+            scene bg gang thailand with fade
+            "Her finner du møterom Thailand og (møterom navn her)."
             jump kantine
         "Gå til datarom og klasseromm":
             scene bg gang tilaft with fade
@@ -75,6 +83,12 @@ label kantine:
     a "Vanlig lunsj tid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
 
     menu:
+        "Gå rundt å se litt":
+            scene bg kantine kjøkken with fade
+            pause 3
+            scene bg kantine kjøleskap with fade
+            "Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
+            jump kantine
         "Gå tilbake til lobby":
             jump lobby 
 
