@@ -53,10 +53,12 @@ label lobby:
     menu:
         "Gå til kantinen":
             jump kantine
-        "Gå til klasserommet":
-            jump klasserom
-        "Gå til datarom":
-            jump datarom
+        "Gå til datarom og klasseromm":
+            scene bg gang tilaft with fade
+            pause 3.0
+            scene bg gang tildatarom with fade
+            pause 3.0
+            jump velgDatarom
         "Ferdig for dagen":
             return
 
@@ -74,6 +76,28 @@ label kantine:
         "Gå tilbake til lobby":
             jump lobby 
 
+
+label velgDatarom:
+    scene gb gang dataromdør with fade
+
+    menu :
+        "Hva vil du se først?"
+        "datarom":
+            jump datarom
+        "klasserom":
+            jump klasserom
+        
+
+label datarom:
+    scene bg datarom with fade
+    show reidar at left
+
+    r "Her har du datarommet"
+    r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter"
+    menu:
+        "Gå tilbake til lobby":
+            jump lobby
+
 label klasserom:
 
     scene bg klasserom
@@ -86,18 +110,8 @@ label klasserom:
     menu:
         "Gå tilbake til lobby":
             jump lobby
-
-label datarom:
-    scene bg datarom
-    show reidar at left
-
-    r "Her har du datarommet"
-    r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter"
-    menu:
-        "Gå tilbake til lobby":
-            jump lobby
-
-    
+        "Eller se datarommet"
+            jump datarom
     
     
 
