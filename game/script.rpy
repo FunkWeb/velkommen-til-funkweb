@@ -35,7 +35,7 @@ label lobby:
     scene bg lobby with ease
 
     if not lobbyBesokt:
-        "Du går inn døren til et område med sofaer og flere  dører."
+        "Du går inn døren til et område med sofaer og fler dører."
         show johnny at right
 
         j "Ta å desinfiser hendene dine før vi går videre."
@@ -56,15 +56,9 @@ label lobby:
 
     menu:
         "Gå til kantinen":
-            scene bg lobby kantine with fade
-            pause 3.0
-            scene bg gang thailand with fade
-            "Her finner du møterom Thailand og (møterom navn her)."
             jump kantine
         "Gå til datarom og klasserom":
-            scene bg gang tilaft with fade
-            pause 3.0
-            scene bg gang tildatarom with fade
+            scene bg gang tilaft with fade #Her må du spørre om spilleren vil se på hva som er på vei til datarommene
             pause 3.0
             jump velgDatarom
         "Hvor er toalettene?":
@@ -73,7 +67,10 @@ label lobby:
             return
 
 label kantine:
-        
+    scene bg lobby kantine with fade
+    pause 3.0
+    scene bg gang thailand with fade
+    "Her finner du møterom Thailand og (møterom navn her)."    
     scene bg kantine with fade
 
     "Kantina ser ut som en ganske vanlig kontorkantine ved første blikk."
@@ -94,6 +91,9 @@ label kantine:
 
 
 label velgDatarom:
+    
+    scene bg gang tildatarom with fade
+    pause 3.0
     scene bg gang dataromdør with fade
 
     menu :
@@ -102,6 +102,8 @@ label velgDatarom:
             jump datarom
         "Klasserom":
             jump klasserom
+        "Tilbake til lobby":
+            jump lobby
         
 
 label datarom:
@@ -118,7 +120,7 @@ label datarom:
 
 label klasserom:
 
-    scene bg klasserom
+    scene bg klasserom with fade
     show ingeborg at right 
 
     "Foran deg er et stort rom med datamaskiner på rekke og rad."
@@ -132,7 +134,7 @@ label klasserom:
             jump datarom
 
 label toalettene:
-    scene bg toaletter with ease
+    scene bg toaletter with fade
 
     "Godt å vite hvor toalettene er."
 
@@ -152,4 +154,34 @@ label gangVedToaletter:
     menu :
         "Tilbake til lobby":
             jump lobby
+
+label aft:
+    scene bg gangtilaft with fade
+    pause 3
+    scene bg aft with fade
+
+    "Her er kontoret til alle AFT veilederne, hvis du har spørsmål kan du komme her."
+
+    menu :
         
+        "Er det et kjøkken bak meg?":
+            jump lobby
+        "Gå videre til datarommene":
+            jump velgDatarom
+        "Gå tilbake til lobby":
+            jump lobby
+        
+label gangKjokken:
+    
+    scene gang kjøkken with fade
+
+    "Kopper og glass finner du i skapene øverst. Ta kaffe og vann som du ønsker."
+
+    menu :
+        
+        "Hva er døren bak meg?":
+            jump aft
+        "Gå videre til datarommene":
+            jump velgDatarom
+        "Gå tilbake til lobby":
+            jump lobby
