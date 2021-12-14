@@ -79,13 +79,14 @@ label kantine:
     a "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
     a "Vanlig lunsjtid for kontoret er 11:30 til 12:00, men ikke føl et press for å spise her."
 
-    menu:
+    menu kantine_meny:
         "Gå rundt å se litt":
             scene bg kantine kjøkken with fade
             pause 3
             scene bg kantine kjøleskap with fade
             "Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
-            jump kantine
+            scene bg kantine with fade
+            jump kantine_meny
         "Gå tilbake til lobby":
             jump lobby 
 
@@ -93,7 +94,13 @@ label kantine:
 label velgDatarom:
     
     scene bg gang tildatarom with fade
-    pause 3.0
+    menu aft_meny:
+        "Det er to steder du kan besøke på vei til datarommene."
+        "AFT kontor dør":
+            #block of code to run
+        "Kjøkken":
+            #block of code to run
+        
     scene bg gang dataromdør with fade
 
     menu :
@@ -113,10 +120,10 @@ label datarom:
     r "Her har du datarommet."
     r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter."
     menu:
-        "Gå tilbake til lobby":
-            jump lobby
-        "Eller se klasserommet":
+        "Jeg vil se klasserommet":
             jump klasserom
+        "Tilbake til lobby":
+            jump lobby
 
 label klasserom:
 
@@ -128,10 +135,10 @@ label klasserom:
     i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kommer du til å sitte her."
 
     menu:
-        "Gå tilbake til lobby":
-            jump lobby
-        "Eller se datarommet":
+        "jeg vil se datarommet":
             jump datarom
+        "Tilbake til lobby":
+            jump lobby
 
 label toalettene:
     scene bg toaletter with fade
