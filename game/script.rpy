@@ -33,6 +33,7 @@ label start:
 label lobby:
 
     scene bg lobby with ease
+    show skrivemaskin at left
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."
@@ -54,11 +55,11 @@ label lobby:
     
     $ lobbyBesokt = True
 
-    menu:
+    menu lobby_menu:
         "Gå til kantinen":
             jump kantine
         "Gå til datarom og klasserom":
-            scene bg gang tilaft with fade #Her må du spørre om spilleren vil se på hva som er på vei til datarommene
+            scene bg gang tilaft with fade 
             pause 3.0
             jump velgDatarom
         "Hvor er toalettene?":
@@ -92,18 +93,19 @@ label kantine:
 
 
 label velgDatarom:
-    
-    scene bg gang tildatarom with fade
     menu aft_meny:
         "Det er to steder du kan besøke på vei til datarommene."
         "AFT kontor dør":
-            #block of code to run
+            jump aft
         "Kjøkken":
-            #block of code to run
-        
-    scene bg gang dataromdør with fade
+            jump gangKjokken
+        "Gå videre":
+            scene bg gang tildatarom with fade
+            pause 3        
+            scene bg gang dataromdør with fade
+            jump velg
 
-    menu :
+    menu velg:
         "Hva vil du se først?"
         "Datarom":
             jump datarom
@@ -180,7 +182,7 @@ label aft:
         
 label gangKjokken:
     
-    scene gang kjøkken with fade
+    scene bg gang kjøkken with fade
 
     "Kopper og glass finner du i skapene øverst. Ta kaffe og vann som du ønsker."
 
