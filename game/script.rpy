@@ -1,7 +1,7 @@
-﻿#image johnny = im.Scale("johnny.png",480,900)
-#image anders = im.Scale("anders.png",480,900)
-#image ingeborg = im.Scale("ingeborg.png",480,900)
-#image reidar = im.Scale("reidar.png",480,900)
+﻿# Confessions of a stressed developer to whom it may concern.
+#Først og fremst, beklager for dette rotet...
+#Jeg fant ut litt sent at man kan splitte opp spillet i flere .rpy scripts så alt ble crammed inn i ett dokument.
+#Tips, renpy liker ikke ØÆÅ så bytt de ut når du lager variables.
 
 define j = Character("Johnny")
 define a = Character("Anders")
@@ -73,6 +73,7 @@ label kantine:
     scene bg gang thailand with fade
     "Her finner du møterom Thailand og (møterom navn her)."    
     scene bg kantine with fade
+    show screen kantineScreen
 
     "Kantina ser ut som en ganske vanlig kontorkantine ved første blikk."
     "Når du ser deg litt rundt så ser du en del kjøleskap og kanskje noen pakker."
@@ -85,10 +86,12 @@ label kantine:
             scene bg kantine kjøkken with fade
             pause 3
             scene bg kantine kjøleskap with fade
-            "Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
+            pause 3
+            #"Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
             scene bg kantine with fade
             jump kantine_meny
         "Gå tilbake til lobby":
+            hide screen kantineScreen
             jump lobby 
 
 
@@ -118,22 +121,23 @@ label velgDatarom:
 label datarom:
     scene bg datarom with fade
     show reidar at left
-    show screen iconScreen 
+    show screen dataromScreen 
 
     r "Her har du datarommet."
     r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter."
     menu:
         "Jeg vil se klasserommet":
-            hide screen iconScreen
+            hide screen dataromScreen
             jump klasserom
         "Tilbake til lobby":
-            hide screen iconScreen
+            hide screen dataromScreen
             jump lobby
 
 label klasserom:
 
     scene bg klasserom with fade
     show ingeborg at right 
+    show screen klasseromScreen
 
     "Foran deg er et stort rom med datamaskiner på rekke og rad."
     i "Dette rommet er utstyrt med enkle Chromebooks."
@@ -141,8 +145,10 @@ label klasserom:
 
     menu:
         "jeg vil se datarommet":
+            hide screen klasseromScreen
             jump datarom
         "Tilbake til lobby":
+            hide screen klasseromScreen
             jump lobby
 
 label toalettene:
