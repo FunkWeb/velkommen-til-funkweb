@@ -118,13 +118,16 @@ label velgDatarom:
 label datarom:
     scene bg datarom with fade
     show reidar at left
+    show screen iconScreen 
 
     r "Her har du datarommet."
     r "Dette er rommet hvor AFT-deltakerene sitter og jobber med prosjekter."
     menu:
         "Jeg vil se klasserommet":
+            hide screen iconScreen
             jump klasserom
         "Tilbake til lobby":
+            hide screen iconScreen
             jump lobby
 
 label klasserom:
