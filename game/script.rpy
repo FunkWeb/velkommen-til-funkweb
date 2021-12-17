@@ -33,7 +33,6 @@ label start:
 label lobby:
 
     scene bg lobby with ease
-    show skrivemaskin at left
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."

@@ -1,3 +1,5 @@
+#Lobby knapper
+
 #datarom knapper------------------------------------------------------------------
 screen dataromScreen():
     imagebutton:
@@ -7,8 +9,8 @@ screen dataromScreen():
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("skrivemaskinIkon")]
     imagebutton:
-        xalign 0.80
-        yalign 0.0
+        xalign 0.90
+        yalign 0.1
         idle "vanlig_datamaskin"
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("datamaskinIkon")]
@@ -34,7 +36,7 @@ screen klasseromScreen():
         yalign 0.0
         idle "chromebook"
         #hover_color "#7d7d7d"
-        action [ui.callsinnewcontext("skrivemaskinIkon")]
+        action [ui.callsinnewcontext("chromebookIkon")]
 
 label chromebookIkon:
     hide screen iconScreen
@@ -46,13 +48,13 @@ label chromebookIkon:
 #Kantine knapper----------------------------------------------------------------
 screen kantineScreen():
     imagebutton:
-        xalign 0.90
+        xalign 0.30
         yalign 0.0
         idle "kjoleskap"
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("kjoleskapIkon")]
     imagebutton:
-        xalign 0.80
+        xalign 0.50
         yalign 0.0
         idle "panteflasker"
         #hover_color "#7d7d7d"
