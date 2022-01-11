@@ -1,3 +1,4 @@
+#toalettene og gangVedToalletter labels er i samme fil ettersom de begge var veldig små og relaterte. 
 
 label toalettene:
     scene bg toaletter with fade

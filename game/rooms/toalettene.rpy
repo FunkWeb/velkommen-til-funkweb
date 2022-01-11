@@ -16,7 +16,7 @@ label gangVedToaletter:
 
     scene bg gang spania with fade
 
-    "Her finner du grupperom Spania og (Blank)"
+    "Her finner du grupperommet vi kaller Spania"
 
     menu :
         "Tilbake til lobby":

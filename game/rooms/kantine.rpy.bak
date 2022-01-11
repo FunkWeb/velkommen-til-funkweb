@@ -3,7 +3,7 @@ label kantine:
     scene bg lobby kantine with fade
     pause 3.0
     scene bg gang thailand with fade
-    "Her finner du møterom Thailand og (møterom navn her). Kantinen er til høyre."    
+    "Her finner du møterom Thailand og (møterom navn her)."    
     scene bg kantine with fade
     show screen kantineScreen
 

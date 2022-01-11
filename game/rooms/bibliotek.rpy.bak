@@ -1,0 +1,15 @@
+label bibliotek:
+    scene bg bibliotek with fade
+    #show screen bibliotekScreen
+
+    "Placeholder text for biblioteket"
+    menu bibliotek_menu:
+        "jeg vil se datarommet":
+            hide screen klasseromScreen
+            jump datarom
+        "jeg vil se biblioteket":
+            hide screen klasseromScreen
+            jump bibliotek
+        "Tilbake til lobby":
+            hide screen klasseromScreen
+            jump lobby

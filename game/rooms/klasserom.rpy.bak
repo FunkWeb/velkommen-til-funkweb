@@ -10,10 +10,10 @@ label klasserom:
     i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kommer du til å sitte her."
 
     menu:
-        "Jeg vil se datarommet":
+        "jeg vil se datarommet":
             hide screen klasseromScreen
             jump datarom
-        "jeg vil se biblioteket":
+		"jeg vil se biblioteket":
             hide screen klasseromScreen
             jump bibliotek
         "Tilbake til lobby":

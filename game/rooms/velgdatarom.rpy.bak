@@ -13,11 +13,11 @@ label velgDatarom:
 
     menu velg:
         "Hva vil du se først?"
-        "Klasserom - Venstre":
+        "Klasserom":
             jump klasserom
-        "Datarom - Fremover":
+        "Datarom":
             jump datarom
-        "Bibliotek - Høyre":
+        "Bibliotek":
             jump bibliotek
         "Tilbake til lobby":
             jump lobby
