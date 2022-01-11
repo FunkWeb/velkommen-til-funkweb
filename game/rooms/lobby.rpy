@@ -26,12 +26,15 @@ label lobby:
 
     menu lobby_menu:
         "Gå til kantinen":
+            hide screen lobbyScreen
             jump kantine
         "Gå til datarom og klasserom":
+            hide screen lobbyScreen
             scene bg gang tilaft with fade 
             pause 3.0
             jump velgDatarom
         "Hvor er toalettene?":
+            hide screen lobbyScreen
             jump toalettene
         "Ferdig for dagen":
             return
