@@ -9,7 +9,7 @@ screen dataromScreen():
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("skrivemaskinIkon")]
     imagebutton:
-        xalign 0.90
+        xalign 0.70
         yalign 0.1
         idle "vanlig_datamaskin"
         #hover_color "#7d7d7d"
@@ -25,15 +25,15 @@ label skrivemaskinIkon:
 label datamaskinIkon:
     hide screen iconScreen
     show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
+    "her kan en veileder si noe om objectet. Datamaskinen i dette tilfellet"
     hide anders
     return
 
 #Klasserom knapper---------------------------------------------------------------
 screen klasseromScreen():
     imagebutton:
-        xalign 0.90
-        yalign 0.0
+        xalign 0.20
+        yalign 0.25
         idle "chromebook"
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("chromebookIkon")]
@@ -41,7 +41,7 @@ screen klasseromScreen():
 label chromebookIkon:
     hide screen iconScreen
     show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
+    "her kan en veileder si noe om objectet. Chromebook i dette tilfellet"
     hide anders
     return
 
@@ -69,20 +69,48 @@ screen kantineScreen():
 label kjoleskapIkon:
     hide screen kantineScreen
     show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
+    "her kan en veileder si noe om objectet. Kjøleskapet i dette tilfellet"
     hide anders
     return
 
 label pantIkon:
     hide screen kantineScreen
     show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
+    "her kan en veileder si noe om objectet. Panteposen i dette tilfellet"
     hide anders
     return
 
 label kaffeIkon:
     hide screen kantineScreen
     show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
+    "her kan en veileder si noe om objectet. Kaffemaskinen i dette tilfellet"
+    hide anders
+    return
+
+
+# Lobby knapper---------------------------------------------------------------
+
+screen lobbyScreen():
+    imagebutton:
+        xalign 0.5
+        yalign 0.0
+        idle "smittevern"
+        #hover_color "#7d7d7d"
+        action [ui.callsinnewcontext("smittevernIkon")]
+
+label smittevernIkon:
+    hide screen lobbyScreen
+    show anders
+    "her kan en veileder si noe om objectet. Smittevern i dette tilfellet"
+    hide anders
+    return
+
+
+# Brannslukker---------------------
+
+label brannslukkerIkon:
+    #hide screen kantineScreen
+    show anders
+    "her kan en veileder si noe om objectet. Brannslukker i dette tilfellet"
     hide anders
     return

@@ -2,6 +2,7 @@
 label lobby:
 
     scene bg lobby with ease
+    show screen lobbyScreen
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."
