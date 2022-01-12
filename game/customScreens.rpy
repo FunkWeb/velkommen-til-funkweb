@@ -32,8 +32,8 @@ label datamaskinIkon:
 #Klasserom knapper---------------------------------------------------------------
 screen klasseromScreen():
     imagebutton:
-        xalign 0.20
-        yalign 0.25
+        xalign 0.50
+        yalign 0.05
         idle "chromebook"
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("chromebookIkon")]
