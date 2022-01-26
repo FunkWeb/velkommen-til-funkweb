@@ -19,6 +19,6 @@ label velgDatarom:
             jump datarom
         "Bibliotek - Høyre":
             jump bibliotek
-        "Tilbake til lobby":
+        "Tilbake til lobbyen":
             jump lobby
         

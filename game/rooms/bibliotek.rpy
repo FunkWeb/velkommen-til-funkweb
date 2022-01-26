@@ -4,9 +4,9 @@ label bibliotek:
 
     "Placeholder text for biblioteket"
     menu bibliotek_menu:
-        "jeg vil se datarommet":
+        "Jeg vil se datarommet":
             jump datarom
-        "jeg vil se klasserommet":
+        "Jeg vil se klasserommet":
             jump klasserom
-        "Tilbake til lobby":
+        "Tilbake til lobbyen":
             jump lobby

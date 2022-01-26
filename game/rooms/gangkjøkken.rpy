@@ -8,7 +8,7 @@ label gangKjokken:
         
         "Hva er døren bak meg?":
             jump aft
-        "Gå videre til datarommene":
+        "Gå videre mot datarommene":
             jump velgDatarom
         "Gå tilbake til lobby":
             jump lobby

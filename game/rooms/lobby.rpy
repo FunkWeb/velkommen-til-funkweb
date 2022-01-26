@@ -2,7 +2,6 @@
 label lobby:
 
     scene bg lobby with ease
-    show screen lobbyScreen
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."
@@ -23,12 +22,13 @@ label lobby:
         "Da er vi tilbake til lobbyen, hvor vil du besøke neste?"
     
     $ lobbyBesokt = True
+    show screen lobbyScreen
 
     menu lobby_menu:
-        "Gå til kantinen":
+        "Gå til venstre mot kantina":
             hide screen lobbyScreen
             jump kantine
-        "Gå til datarom og klasserom":
+        "Gå til høyre mot datarommene":
             hide screen lobbyScreen
             scene bg gang tilaft with fade 
             pause 3.0
