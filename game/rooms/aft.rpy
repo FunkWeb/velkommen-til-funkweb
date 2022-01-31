@@ -9,7 +9,7 @@ label aft:
         
         "Er det et kjøkken bak meg?":
             jump gangKjokken
-        "Gå videre til datarommene":
+        "Gå videre mot datarommene":
             jump velgDatarom
         "Gå tilbake til lobby":
             jump lobby
