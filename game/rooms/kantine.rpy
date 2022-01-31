@@ -17,6 +17,8 @@ label kantine:
         "Gå rundt å se litt":
             scene bg kantine kjøkken with fade
             pause 3
+            scene bg kantine bak with fade
+            pause 3
             scene bg kantine kjøleskap with fade
             pause 3
             #"Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."

@@ -2,7 +2,6 @@
 label lobby:
 
     scene bg lobby with ease
-    show screen lobbyScreen
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."
@@ -12,13 +11,14 @@ label lobby:
         scene bg antibac
         "Til venstre for døren ser du midler for å desinfisere hender og munnbind hvis du trenger det. Du kan også henge fra deg jakker her."
         scene bg lobby
-
+        show screen lobbyScreen
         show johnny at right
         j "Dette er lobbyen."
         j "Her finner du møterom (møterom navn her) og toaletter."
         "Alltid godt å vite hvor toalettene er."
     
     else:
+        show screen lobbyScreen
         show johnny at left
         "Da er vi tilbake til lobbyen, hvor vil du besøke neste?"
     
@@ -28,11 +28,11 @@ label lobby:
         "Gå til kantinen":
             hide screen lobbyScreen
             jump kantine
-        "Gå til datarom og klasserom":
+        "Gå til datarom, klasserom og bibliotek":
             hide screen lobbyScreen
             scene bg gang tilaft with fade 
             pause 3.0
-            jump velgDatarom
+            jump aftGangen
         "Hvor er toalettene?":
             hide screen lobbyScreen
             jump toalettene

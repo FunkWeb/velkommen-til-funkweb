@@ -10,6 +10,7 @@ define a = Character("Anders")
 define i = Character("Ingeborg")
 define r = Character("Reidar")
 define q = Character("???")
+#define am = Character("Amelie")
 
 default lobbyBesokt = False
 
