@@ -11,18 +11,17 @@ label lobby:
         scene bg antibac
         "Til venstre for døren ser du midler for å desinfisere hender og munnbind hvis du trenger det. Du kan også henge fra deg jakker her."
         scene bg lobby
-        show screen lobbyScreen
         show johnny at right
         j "Dette er lobbyen."
         j "Her finner du møterom (møterom navn her) og toaletter."
         "Alltid godt å vite hvor toalettene er."
     
     else:
-        show screen lobbyScreen
         show johnny at left
         "Da er vi tilbake til lobbyen, hvor vil du besøke neste?"
     
     $ lobbyBesokt = True
+
     show screen lobbyScreen
 
     menu lobby_menu:
