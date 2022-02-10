@@ -10,9 +10,8 @@ label bibliotek:
     #show screen bibliotekScreen
 
     menu bibliotek_menu:
-        "Jeg vil se datarommet":
-            jump datarom
-        "Jeg vil se klasserommet":
-            jump klasserom
+        "Tilbake til gangen":
+            jump velgDatarom
         "Tilbake til lobbyen":
+            $ forbiDataromGang = False
             jump lobby

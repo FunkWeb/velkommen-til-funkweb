@@ -1,7 +1,7 @@
 
 label kantine:
     scene bg lobby kantine with fade
-    pause 3.0
+    pause 2.0
     scene bg gang thailand with fade
     "Her finner du møterom Thailand og Tibet. Kantina er til høyre."    
     scene bg kantine with fade
@@ -17,11 +17,11 @@ label kantine:
     menu kantine_meny:
         "Se deg litt rundt i kantina":
             scene bg kantine kjøkken with fade
-            pause 3
+            pause 2
             scene bg kantine bak with fade
-            pause 3
+            pause 2
             scene bg kantine kjøleskap with fade
-            pause 3
+            pause 2
             #"Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
             scene bg kantine with fade
             jump kantine_meny

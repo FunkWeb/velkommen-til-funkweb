@@ -1,7 +1,7 @@
 
 label lobby:
 
-    scene bg lobby with ease
+    scene bg lobby with fade
 
     if not lobbyBesokt:
         "Du går inn døren til et område med sofaer og fler dører."
@@ -31,10 +31,14 @@ label lobby:
         "Gå til høyre mot datarommene":
             hide screen lobbyScreen
             scene bg gang tilaft with fade 
-            pause 3.0
+            pause 2.0
             jump aftGangen
         "Hvor er toalettene?":
             hide screen lobbyScreen
             jump toalettene
         "Ferdig for dagen":
+            hide screen lobbyScreen
+            j "Ha en fin dag!"
+            scene bg svart with fade
+            pause 2.0
             return

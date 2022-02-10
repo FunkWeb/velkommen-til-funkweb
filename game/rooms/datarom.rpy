@@ -9,12 +9,10 @@ label datarom:
     show screen dataromScreen
 
     menu:
-        "Jeg vil se klasserommet":
+        "Tilbake til gangen":
             hide screen dataromScreen
-            jump klasserom
-        "Jeg vil se biblioteket":
-            hide screen dataromScreen
-            jump bibliotek
+            jump velgDatarom
         "Tilbake til lobbyen":
+            $ forbiDataromGang = False
             hide screen dataromScreen
             jump lobby

@@ -12,6 +12,7 @@ define l = Character("Laila")
 #define am = Character("Amelie")
 
 default lobbyBesokt = False
+default forbiDataromGang = False
 
 label start:
 
