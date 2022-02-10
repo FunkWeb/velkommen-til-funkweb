@@ -5,7 +5,7 @@ label toalettene:
     pause 2
     scene bg toaletter with fade
 
-    "Godt å vite hvor toalettene er."
+    "Her er toalettene. Rett utenfor Spania."
 
     menu :
         

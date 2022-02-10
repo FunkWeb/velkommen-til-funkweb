@@ -13,7 +13,8 @@ label lobby:
         scene bg lobby
         show johnny at right
         j "Dette er lobbyen."
-        j "Her finner du møterom (møterom navn her) og toaletter."
+        j "Her finner du møterommene Spania, Zambia og Kenya."
+        j "Toalettene finner du også her."
         "Alltid godt å vite hvor toalettene er."
     
     else:
