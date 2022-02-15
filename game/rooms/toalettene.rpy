@@ -14,12 +14,3 @@ label toalettene:
         "Tilbake til lobby":
             jump lobby
 
-label gangVedToaletter:
-
-    scene bg gang spania with fade
-
-    "Her finner du grupperommet vi kaller Spania"
-
-    menu :
-        "Tilbake til lobby":
-            jump lobby

@@ -6,7 +6,7 @@ label klasserom:
 
     "Foran deg er et stort rom med datamaskiner på rekke og rad."
     i "Dette rommet er utstyrt med enkle Chromeboxes."
-    i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kommer du til å sitte her."
+    i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kan du sitte her."
 
     show screen klasseromScreen
 

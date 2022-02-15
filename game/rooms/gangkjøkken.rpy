@@ -6,7 +6,7 @@ label gangKjokken:
 
     menu :
         
-        "Hva er døren bak meg?":
+        "Snu deg mot døren":
             jump aft
         "Gå videre mot datarommene":
             jump velgDatarom

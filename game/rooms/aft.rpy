@@ -7,7 +7,7 @@ label aft:
     #scene bg gang tilaft with fade
     menu :
         
-        "Er det et kjøkken bak meg?":
+        "Snu deg mot kjøkkenet":
             jump gangKjokken
         "Gå videre mot datarommene":
             jump velgDatarom
