@@ -1,6 +1,6 @@
 label aftGangen:
     menu aft_meny:
-        "Det er to steder du kan besøke på vei til datarommene."
+        j "Det er to steder du kan besøke på vei til datarommene."
         "AFT kontor dør - Venstre":
             jump aft
         "Kjøkken - Høyre":

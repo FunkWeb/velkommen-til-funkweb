@@ -5,8 +5,12 @@ label klasserom:
     show ingeborg at right 
 
     "Foran deg er et stort rom med datamaskiner på rekke og rad."
+    i "Velkommen til klasserommet. Jeg heter Ingeborg."
+    i "Jeg lover at jeg ikke er så skummel som jeg ser ut."
+    i "Dette er ett av to rom du kan booke for å sitte å arbeide i."
+    i "Du kan reservere plass på booking.funkweb.no."
     i "Dette rommet er utstyrt med enkle Chromeboxes."
-    i "Hvis du primært skal skrive CV, jobbsøknader eller kanskje ta noen onlinekurs kan du sitte her."
+    i "Her kan du skrive CV, jobbsøknader eller kanskje ta noen onlinekurs."
 
     show screen klasseromScreen
 

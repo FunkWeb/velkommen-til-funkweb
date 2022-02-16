@@ -1,0 +1,44 @@
+Resepsjon: desinfiseringsmiddel.
+Kantine: kjøleskap, pantepose, kaffemaskin.
+Klasserommet: datamaskin.
+Prosjektrommet: datamaskin, printer.
+
+Desinfisering:
+"Her står det antibac."
+"Vi prøver å begrense smittespredning. Det er fint om du spriter deg når du kommer og før du går."
+
+Kjøleskap:
+"Her kan du legge lunsjen tid så den holder seg kald."
+"Det som står til venstre ved vinduet kan brukes av deltakere"
+
+Panteposen:
+"Her putter vi pantbare tomflasker i panteposen."
+"Resirkulering er viktig."
+
+Kaffemaskin:
+"Forsyn deg gjerne med nytraktet kaffe."
+"Lag helst ny om du tar den siste koppen."
+
+Datamaskin (klasserom):
+""
+
+Datamaskin (prosjektrom):
+"Disse maskinene kjører Windows." (sjekk)
+"De to PC-ene nærmest døren er kraftigere gaming-maskiner."
+
+Printer:
+"papir, nettverk, navn."
+
+
+Thailand: "Thailand er møterommet rett utenfor kantinen. Der er det 4 sitteplasser."
+Tibet: "Tibet er det andre møterommet i gangen utenfor kantinen. Der er det 4 sitteplasser."
+Kina: "Kina er det tredje møterommet i gangen utenfor kantinen. Der er det 4 sitteplasser."
+
+Brazil: Ingangen til Brazil finner du innerst i kantinen, ved siden av vinduene. Det har plass til 3 stykker."
+
+Spania: "Spania er lengst til venstre i resepsjonen, ved siden av toalettene. Der er det 4 sitteplasser."
+Zimbabwe: "Zimbabwe er det midterste møterommet i resepsjonen, mellom Spania og Kenya. Det er det 4 sitteplasser."
+Kenya: "Kenya er lengst til høyre i resepsjonen, og er nærmest TV-skjermen. Der er det 4 sitteplasser."
+
+Biblioteket: "Biblioteket er det største møterommet vi har, med N sitteplasser. Det finner du om du følger gangen helt inn til høyre, og går til høyre ved datarommene."
+

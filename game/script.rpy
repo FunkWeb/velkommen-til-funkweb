@@ -9,7 +9,7 @@ define i = Character("Ingeborg")
 define r = Character("Reidar")
 define q = Character("???")
 define l = Character("Laila")
-#define am = Character("Amelie")
+define am = Character("Amelie")
 
 default lobbyBesokt = False
 default forbiDataromGang = False
@@ -27,8 +27,11 @@ label start:
     "På venstre siden av døren finner du en ringeklokke. Du trykker på den."
 
     show johnny at right with fade
-    q "Heisann! Alltid fint å få nye folk inn i AFT!"
+    q "Heisann!"
     j "Mitt navn er Johnny, hyggelig å møte deg."
+    j "Jeg er veileder her på FunkWeb og jobber i AFT: arbeidsforberedene tiltak."
+    j "Jeg elsker å prate om film, så hvis du øsnker å nerde litt om det er jeg alltid positiv til det."
+    j "Jeg snakker også flytende spansk."
     j "La meg vise deg rundt kjapt."
 
     jump lobby

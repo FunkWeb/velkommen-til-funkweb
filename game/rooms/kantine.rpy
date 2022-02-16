@@ -8,10 +8,13 @@ label kantine:
 
     "Kantina ser ut som en ganske vanlig kontorkantine ved første blikk."
     "Når du ser deg litt rundt så ser du et kjøkken med noen kjøleskap og noen spisebord."
-    show anders at left
-    a "I kjølekapet lengst til venstre fra døren kan du legge mat du har med deg."
-    a "Vanlig lunsjtid for kontoret er 11:30 til 12:00, men ikke føl deg presset til å spise her da."
-    a "Innerst til høyre ligger også møterommet Brazil."
+    show amelie at left
+    am "Hei, er du sulten? Da har du kommet til rett sted."
+    am "Jeg heter Amelie, og dette er kantina."
+    am "Jeg er veileder her, og er åpen for spørsmål når som helst."
+    am "I kjølekapet til venstre fra døren kan du legge mat du har med deg."
+    am "Vanlig lunsjtid for kontoret er 11:30 til 12:00, men du kan bruke kantina når som helst når du trenger en pause."
+    am "Innerst til høyre ligger også møterommet Brazil."
 
     show screen kantineScreen
 

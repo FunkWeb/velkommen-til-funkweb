@@ -3,13 +3,13 @@
 #datarom knapper------------------------------------------------------------------
 screen dataromScreen():
     imagebutton:
-        xalign 0.90
+        xalign 0.60
         yalign 0.0
         idle "skrivemaskin"
         #hover_color "#7d7d7d"
         action [ui.callsinnewcontext("skrivemaskinIkon")]
     imagebutton:
-        xalign 0.70
+        xalign 0.40
         yalign 0.1
         idle "vanlig_datamaskin"
         #hover_color "#7d7d7d"
@@ -17,16 +17,14 @@ screen dataromScreen():
 
 label skrivemaskinIkon:
     hide screen iconScreen
-    show anders
-    "her kan en veileder si noe om objectet. Skriveren i dette tilfellet"
-    hide anders
+    a "Du kan bruke printeren når du trenger det."
+    a "Den har navnet NAVN."
     return
 
 label datamaskinIkon:
     hide screen iconScreen
-    show anders
-    "her kan en veileder si noe om objectet. Datamaskinen i dette tilfellet"
-    hide anders
+    a "Disse datamaskinene kjører hovedsakelig Windows."
+    a "De to PC-ene nærmest døren er kriftigere gaming-maskiner."
     return
 
 #Klasserom knapper---------------------------------------------------------------
@@ -40,9 +38,7 @@ screen klasseromScreen():
 
 label chromebookIkon:
     hide screen iconScreen
-    show anders
-    "her kan en veileder si noe om objectet. Chromebook i dette tilfellet"
-    hide anders
+    i "Datamaskinene her er Chromebooks som bruker Chrome OS."
     return
 
 #Kantine knapper----------------------------------------------------------------
@@ -68,23 +64,20 @@ screen kantineScreen():
 
 label kjoleskapIkon:
     hide screen kantineScreen
-    show anders
-    "her kan en veileder si noe om objectet. Kjøleskapet i dette tilfellet"
-    hide anders
+    am "Her kan du legge lunsjen din så den holder seg kald."
+    am "Kjøleskapet som står nærmest vinduet kan brukes av deltakere."
     return
 
 label pantIkon:
     hide screen kantineScreen
-    show anders
-    "her kan en veileder si noe om objectet. Panteposen i dette tilfellet"
-    hide anders
+    am "Pantbare tomflasker plasseres her i panteposen."
+    am "Det er viktig å resirkulere."
     return
 
 label kaffeIkon:
     hide screen kantineScreen
-    show anders
-    "her kan en veileder si noe om objectet. Kaffemaskinen i dette tilfellet"
-    hide anders
+    am "Forsyn deg gjerne med nytraktet kaffe herfra."
+    am "Lag helst mer om du tar den siste koppen."
     return
 
 
@@ -100,9 +93,9 @@ screen lobbyScreen():
 
 label smittevernIkon:
     hide screen lobbyScreen
-    show anders
-    "her kan en veileder si noe om objectet. Smittevern i dette tilfellet"
-    hide anders
+    scene bg antibac
+    j "Ved inngangen står det antibac og diverse smittevernsutstyr."
+    j "Vi prøver å begrense smittespredning. Det er fint om du spriter deg når du kommer og før du går."
     return
 
 
@@ -110,7 +103,5 @@ label smittevernIkon:
 
 label brannslukkerIkon:
     #hide screen kantineScreen
-    show anders
     "her kan en veileder si noe om objectet. Brannslukker i dette tilfellet"
-    hide anders
     return
