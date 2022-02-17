@@ -35,6 +35,7 @@ label lobby:
             hide screen lobbyScreen
             jump toalettene
         "Fortell meg om møterommene":
+            hide screen lobbyScreen
             j "Vi har 8 møterom som kan reserveres gjennom Google Kalender."
             j "De fleste av disse har vi gitt navn av forskjellige nasjoner."
             j "Hvilket møterom er du interessert i å høre mer om?"
@@ -73,4 +74,5 @@ label lobby:
             j "Det finner du om du følger gangen helt inn til høyre, og går til høyre ved datarommene."
             jump møterom_menu
         "Det var alt":
+            show screen lobbyScreen
             jump lobby_menu

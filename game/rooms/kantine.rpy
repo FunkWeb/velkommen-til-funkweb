@@ -30,6 +30,7 @@ label kantine:
             #"Kjøleskapet helt til høyre er for AFT deltakere. Til høyre for det igjen kan du kaste pant."
             scene bg kantine with fade
             show screen kantineScreen
+			show amelie at left
             jump kantine_meny
         "Gå tilbake til lobbyen":
             hide screen kantineScreen

@@ -18,7 +18,7 @@ screen dataromScreen():
 label skrivemaskinIkon:
     hide screen iconScreen
     a "Du kan bruke printeren når du trenger det."
-    a "Den har navnet NAVN."
+    a "Den har navnet AFT-skriver i systemet."
     return
 
 label datamaskinIkon:
