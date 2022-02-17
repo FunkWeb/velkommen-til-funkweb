@@ -36,7 +36,7 @@ label lobby:
             jump toalettene
         "Fortell meg om møterommene":
             hide screen lobbyScreen
-            j "Vi har 8 møterom som kan reserveres gjennom Google Kalender."
+            j "Vi har åtte møterom som kan reserveres gjennom Google Kalender."
             j "De fleste av disse har vi gitt navn av forskjellige nasjoner."
             j "Hvilket møterom er du interessert i å høre mer om?"
             
@@ -49,28 +49,28 @@ label lobby:
 
     menu møterom_menu:
         "Spania":
-            j "Spania er lengst til venstre i resepsjonen, ved siden av toalettene. Der er det 4 sitteplasser."
+            j "Spania er lengst til venstre i resepsjonen, ved siden av toalettene. Der er det fire sitteplasser."
             jump møterom_menu
         "Zimbabwe":
-            j "Zimbabwe er det midterste møterommet i resepsjonen, mellom Spania og Kenya. Det er det 4 sitteplasser."
+            j "Zimbabwe er det midterste møterommet i resepsjonen, mellom Spania og Kenya. Det er det fire sitteplasser."
             jump møterom_menu
         "Kenya":
-            j "Kenya er lengst til høyre i resepsjonen, og er nærmest TV-skjermen. Der er det 4 sitteplasser."
+            j "Kenya er lengst til høyre i resepsjonen, og er nærmest TV-skjermen. Der er det fire sitteplasser."
             jump møterom_menu
         "Brazil":
-            j "Ingangen til Brazil finner du innerst i kantinen, ved siden av vinduene. Det har plass til 3 stykker."
+            j "Ingangen til Brazil finner du innerst i kantinen, ved siden av vinduene. Det har plass til tre stykker."
             jump møterom_menu
         "Thailand":
-            j "Thailand er møterommet rett utenfor kantinen. Der er det 4 sitteplasser."
+            j "Thailand er møterommet rett utenfor kantinen. Der er det fire sitteplasser."
             jump møterom_menu
         "Tibet":
-            j "Tibet er det andre møterommet i gangen utenfor kantinen. Der er det 4 sitteplasser."
+            j "Tibet er det andre møterommet i gangen utenfor kantinen. Der er det fire sitteplasser."
             jump møterom_menu
         "Kina":
-            j "Kina er det tredje møterommet i gangen utenfor kantinen. Der er det 4 sitteplasser."
+            j "Kina er det tredje møterommet i gangen utenfor kantinen. Der er det fire sitteplasser."
             jump møterom_menu
         "Biblioteket":
-            j "Biblioteket er det største møterommet vi har, med N sitteplasser."
+            j "Biblioteket er det største møterommet vi har, med 7 sitteplasser."
             j "Det finner du om du følger gangen helt inn til høyre, og går til høyre ved datarommene."
             jump møterom_menu
         "Det var alt":
