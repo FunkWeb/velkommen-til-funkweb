@@ -5,8 +5,6 @@
 
 define j = Character("Johnny")
 define a = Character("Anders")
-define i = Character("Ingeborg")
-define r = Character("Reidar")
 define q = Character("???")
 define l = Character("Laila")
 define am = Character("Amelie")
@@ -14,6 +12,11 @@ define s = Character("Simen")
 
 default lobbyBesokt = False
 default forbiDataromGang = False
+
+default dataromIntroFerdig = False
+default bibliotekIntroFerdig = False
+default kantineIntroFerdig = False
+default klasseromIntroFerdig = False
 
 label start:
 

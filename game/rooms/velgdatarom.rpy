@@ -20,7 +20,8 @@ label velgDatarom:
         "Klasserom - Venstre":
             $ forbiDataromGang = True
             jump klasserom
-        "Datarom - Fremover":
+        "Prosjektrom - Fremover":
+            $ forbiDataromGang = True
             jump datarom
         "Bibliotek - Høyre":
             $ forbiDataromGang = True

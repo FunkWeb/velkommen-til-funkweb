@@ -38,7 +38,7 @@ screen klasseromScreen():
 
 label chromebookIkon:
     hide screen iconScreen
-    i "Datamaskinene her er Chromebooks som bruker Chrome OS."
+    s "Datamaskinene her er Chromebooks som bruker Chrome OS."
     return
 
 #Kantine knapper----------------------------------------------------------------

@@ -5,15 +5,14 @@ label lobby:
 
     if not lobbyBesokt:
         "Du går inn i et resepsjonsområde med flere sofaer."
-        show johnny at right
+        #show johnny at right
 
         scene bg lobby
         show johnny at right
-        j "Dette er resepsjonen. Her kan folk vente på møter, eller bare sitte å slappe av."
-        j "Her finner du møterommene Spania, Zambia og Kenya."
-        j "Toalettene finner du også her innerst til venstre."
-
-    
+        label lobbyBeskrivelse:
+            j "Dette er resepsjonen. Her kan folk vente på møter, eller bare sitte å slappe av."
+            j "Her finner du møterommene Spania, Zambia og Kenya."
+            j "Toalettene finner du også her innerst til venstre."
     else:
         show johnny at left
         "Da er vi tilbake i resepsjonen. Hvor vil du gå nå?"
@@ -31,15 +30,17 @@ label lobby:
             scene bg gang tilaft with fade 
             pause 2.0
             jump aftGangen
-        "Hvor er toalettene?":
+        "\"Hvor er toalettene?\"":
             hide screen lobbyScreen
             jump toalettene
-        "Fortell meg om møterommene":
+        "\"Fortell meg om møterommene\"":
             hide screen lobbyScreen
             j "Vi har åtte møterom som kan reserveres gjennom Google Kalender."
             j "De fleste av disse har vi gitt navn av forskjellige nasjoner."
+            j "Alle har også en chromebook som hører til rommet som kan brukes under møter."
             j "Hvilket møterom er du interessert i å høre mer om?"
-            
+        "\"Fortell meg igjen om resepsjonen\"":
+            jump lobbyBeskrivelse
         "Ferdig for dagen":
             hide screen lobbyScreen
             j "Ha en fin dag!"
@@ -70,7 +71,7 @@ label lobby:
             j "Kina er det tredje møterommet i gangen utenfor kantinen. Der er det fire sitteplasser."
             jump møterom_menu
         "Biblioteket":
-            j "Biblioteket er det største møterommet vi har, med 7 sitteplasser."
+            j "Biblioteket er det største møterommet vi har, med 8 sitteplasser."
             j "Det finner du om du følger gangen helt inn til høyre, og går til høyre ved datarommene."
             jump møterom_menu
         "Det var alt":

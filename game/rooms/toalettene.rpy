@@ -8,9 +8,7 @@ label toalettene:
     "Her er toalettene. Rett utenfor Spania."
 
     menu :
-        
-        "Hva er inngangen til høyre for toalettene?":
-            jump gangVedToaletter
+
         "Tilbake til lobby":
             jump lobby
 
