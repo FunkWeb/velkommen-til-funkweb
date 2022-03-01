@@ -24,7 +24,7 @@ label skrivemaskinIkon:
 label datamaskinIkon:
     hide screen iconScreen
     a "Disse datamaskinene kjører hovedsakelig Windows."
-    a "De to PC-ene nærmest døren er kriftigere gaming-maskiner."
+    a "De to PC-ene nærmest døren er kraftigere gaming-maskiner."
     return
 
 #Klasserom knapper---------------------------------------------------------------
