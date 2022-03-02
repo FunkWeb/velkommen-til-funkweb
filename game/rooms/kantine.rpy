@@ -42,7 +42,7 @@ label kantine:
             scene bg kantine with fade
             show screen kantineScreen
             show amelie at left
-            jump kantine_meny
+            jump kantine_menu
         "Gå tilbake til lobbyen":
             hide screen kantineScreen
             jump lobby 
