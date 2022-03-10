@@ -13,6 +13,6 @@ label toalettene:
 
     menu :
 
-        "Tilbake til lobby":
+        "Gå tilbake til resepsjonen":
             jump lobby
 

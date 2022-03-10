@@ -26,7 +26,7 @@ label velgDatarom:
         "Bibliotek - Høyre":
             $ forbiDataromGang = True
             jump bibliotek
-        "Tilbake til lobbyen":
+        "Gå tilbake til resepsjonen":
             $ forbiDataromGang = False
             jump lobby
         

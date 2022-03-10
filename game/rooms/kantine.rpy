@@ -43,7 +43,7 @@ label kantine:
             show screen kantineScreen
             show amelie at left
             jump kantine_menu
-        "Gå tilbake til lobbyen":
+        "Gå tilbake til resepsjonen":
             hide screen kantineScreen
             jump lobby 
 

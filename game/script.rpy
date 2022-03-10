@@ -34,7 +34,7 @@ label start:
     q "Heisann!"
     j "Mitt navn er Johnny, hyggelig å møte deg."
     j "Jeg er veileder her på FunkWeb og jobber i AFT: arbeidsforberedene tiltak."
-    j "Jeg elsker å prate om film, så hvis du øsnker å nerde litt om det er jeg alltid positiv til det."
+    j "Jeg elsker å prate om film, så hvis du ønsker å nerde litt om det er jeg alltid positiv til det."
     j "Jeg snakker også flytende spansk."
     j "La meg vise deg rundt kjapt."
 

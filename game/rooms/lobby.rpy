@@ -10,7 +10,7 @@ label lobby:
         scene bg lobby
         show johnny at right
         label lobbyBeskrivelse:
-            j "Dette er resepsjonen. Her kan folk vente på møter, eller bare sitte å slappe av."
+            j "Dette er resepsjonen. Her kan folk vente på møter, eller bare sitte og slappe av."
             j "Her finner du møterommene Spania, Zambia og Kenya."
             j "Toalettene finner du også her innerst til venstre."
     else:
@@ -22,6 +22,17 @@ label lobby:
     show screen lobbyScreen
 
     menu lobby_menu:
+        "\"Fortell meg igjen om resepsjonen\"":
+            jump lobbyBeskrivelse
+        "\"Fortell meg om møterommene\"":
+            hide screen lobbyScreen
+            j "Vi har åtte møterom som kan reserveres gjennom Google Kalender."
+            j "De fleste av disse har vi gitt navn av forskjellige nasjoner."
+            j "Alle har også en chromebook som hører til rommet som kan brukes under møter."
+            j "Hvilket møterom er du interessert i å høre mer om?"
+        "\"Hvor er toalettene?\"":
+            hide screen lobbyScreen
+            jump toalettene
         "Gå til venstre mot kantina":
             hide screen lobbyScreen
             jump kantine
@@ -30,17 +41,6 @@ label lobby:
             scene bg gang tilaft with fade 
             pause 2.0
             jump aftGangen
-        "\"Hvor er toalettene?\"":
-            hide screen lobbyScreen
-            jump toalettene
-        "\"Fortell meg om møterommene\"":
-            hide screen lobbyScreen
-            j "Vi har åtte møterom som kan reserveres gjennom Google Kalender."
-            j "De fleste av disse har vi gitt navn av forskjellige nasjoner."
-            j "Alle har også en chromebook som hører til rommet som kan brukes under møter."
-            j "Hvilket møterom er du interessert i å høre mer om?"
-        "\"Fortell meg igjen om resepsjonen\"":
-            jump lobbyBeskrivelse
         "Ferdig for dagen":
             hide screen lobbyScreen
             j "Ha en fin dag!"
@@ -53,13 +53,13 @@ label lobby:
             j "Spania er lengst til venstre i resepsjonen, ved siden av toalettene. Der er det fire sitteplasser."
             jump møterom_menu
         "Zimbabwe":
-            j "Zimbabwe er det midterste møterommet i resepsjonen, mellom Spania og Kenya. Det er det fire sitteplasser."
+            j "Zimbabwe er det midterste møterommet i resepsjonen, mellom Spania og Kenya. Der er det fire sitteplasser."
             jump møterom_menu
         "Kenya":
             j "Kenya er lengst til høyre i resepsjonen, og er nærmest TV-skjermen. Der er det fire sitteplasser."
             jump møterom_menu
         "Brazil":
-            j "Ingangen til Brazil finner du innerst i kantinen, ved siden av vinduene. Det har plass til tre stykker."
+            j "Ingangen til Brasil finner du innerst i kantinen, ved siden av vinduene. Der er det tre sitteplasser."
             jump møterom_menu
         "Thailand":
             j "Thailand er møterommet rett utenfor kantinen. Der er det fire sitteplasser."

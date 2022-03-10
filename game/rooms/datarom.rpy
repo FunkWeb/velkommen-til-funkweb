@@ -19,10 +19,10 @@ label datarom:
     menu datarom_menu:
         "\"Kan du fortelle meg om dette rommet igjen?\"":
             jump dataromBeskrivelse
-        "Tilbake til gangen":
+        "Gå tilbake til gangen":
             hide screen dataromScreen
             jump velgDatarom
-        "Tilbake til lobbyen":
+        "Gå tilbake til resepsjonen":
             $ forbiDataromGang = False
             hide screen dataromScreen
             jump lobby

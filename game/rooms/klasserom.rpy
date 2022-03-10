@@ -24,10 +24,10 @@ label klasserom:
     menu klasserom_menu:
         "\"Kan du fortelle meg om dette rommet igjen?\"":
             jump klasseromBeskrivelse
-        "Tilbake til gangen":
+        "Gå tilbake til gangen":
             hide screen klasseromScreen
             jump velgDatarom
-        "Tilbake til lobbyen":
+        "Gå tilbake til resepsjonen":
             $ forbiDataromGang = False
             hide screen klasseromScreen
             jump lobby

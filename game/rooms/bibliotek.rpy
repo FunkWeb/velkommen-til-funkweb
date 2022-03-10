@@ -22,8 +22,8 @@ label bibliotek:
     menu bibliotek_menu:
         "\"Kan du fortelle meg om dette rommet igjen?\"":
             jump bibliotekBeskrivelse
-        "Tilbake til gangen":
+        "Gå tilbake til gangen":
             jump velgDatarom
-        "Tilbake til lobbyen":
+        "Gå tilbake til resepsjonen":
             $ forbiDataromGang = False
             jump lobby
